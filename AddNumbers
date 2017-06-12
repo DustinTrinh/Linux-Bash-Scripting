@@ -1,0 +1,68 @@
+#!/bin/bash
+#set -x
+
+sum=0
+check=0
+for number in $1 $2 $3 $4
+
+
+do
+
+	echo $number | grep [^0-9+-] >/dev/null
+
+
+if [ $? != 1 ]
+	then echo "Sorry, '$number' is not a number"
+	check=1
+break;
+
+else
+
+	sum=$((sum + number))
+fi
+
+done
+
+if [ $check == 0 ]
+
+	then echo $sum
+	
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
